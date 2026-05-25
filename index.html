@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJIMMY LANGAPA | Commercial Property CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #1e293b;
+      line-height: 1.7;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: #ffffff;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+    }
+
+    .sidebar {
+      background: #0f172a;
+      color: white;
+      padding: 50px 35px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.15);
+      margin-bottom: 20px;
+    }
+
+    .profile h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .profile p {
+      color: #cbd5e1;
+      font-size: 14px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 35px;
+    }
+
+    .sidebar-section h2 {
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      color: #94a3b8;
+    }
+
+    .sidebar-section ul {
+      list-style: none;
+    }
+
+    .sidebar-section li {
+      margin-bottom: 12px;
+      font-size: 14px;
+      color: #e2e8f0;
+    }
+
+    .main {
+      padding: 60px;
+    }
+
+    .hero {
+      margin-bottom: 45px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      line-height: 1.2;
+      color: #0f172a;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .hero span {
+      color: #2563eb;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #475569;
+      max-width: 90%;
+    }
+
+    .section {
+      margin-bottom: 45px;
+    }
+
+    .section-title {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #2563eb;
+      margin-bottom: 25px;
+    }
+
+    .experience-item {
+      margin-bottom: 35px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .experience-item:last-child {
+      border-bottom: none;
+    }
+
+    .experience-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      gap: 20px;
+    }
+
+    .experience-header h3 {
+      font-size: 20px;
+      color: #0f172a;
+      margin-bottom: 5px;
+    }
+
+    .experience-header h4 {
+      font-size: 15px;
+      color: #2563eb;
+      font-weight: 600;
+    }
+
+    .experience-date {
+      font-size: 14px;
+      color: #64748b;
+      white-space: nowrap;
+    }
+
+    .experience-item ul {
+      padding-left: 18px;
+      margin-top: 12px;
+    }
+
+    .experience-item li {
+      margin-bottom: 10px;
+      color: #475569;
+      font-size: 15px;
+    }
+
+    .achievement-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .achievement-card {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 22px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .achievement-card h4 {
+      font-size: 15px;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+
+    .achievement-card p {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .education {
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .education h3 {
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+
+    .footer-note {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .main {
+        padding: 40px;
+      }
+
+      .achievement-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .experience-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <aside class="sidebar">
+
+      <div class="profile">
+        <img src="https://via.placeholder.com/300x300.png?text=PHOTO" alt="Profile Photo">
+        <h1>DJIMMY LANGAPA</h1>
+        <p>Primary Commercial Property<br>Business Development</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Contact</h2>
+        <ul>
+          <li>📞 0852-9808-9263</li>
+          <li>✉️ djlangapa@gmail.com</li>
+          <li>📍 Jakarta Utara</li>
+          <li>🔗 linkedin.com/in/yourprofile</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Core Expertise</h2>
+        <ul>
+          <li>Commercial Property Sales</li>
+          <li>Business Development</li>
+          <li>Relationship Management</li>
+          <li>Client Acquisition</li>
+          <li>Deal Negotiation</li>
+          <li>Strategic Prospecting</li>
+          <li>Revenue Growth</li>
+          <li>Presentation & Communication</li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h2>Training</h2>
+        <ul>
+          <li>Dale Carnegie Professional Selling</li>
+          <li>MDRT Closing Techniques</li>
+          <li>Banking Fundamental</li>
+          <li>Financial Planning & Mutual Fund</li>
+          <li>Personal Branding & Business Ethics</li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <main class="main">
+
+      <section class="hero">
+        <h2>Commercial Relationship Builder with <span>Property & Financial Services</span> Experience</h2>
+
+        <p>
+          Commercial sales and relationship management professional with experience across property marketplace, banking, and wealth management industries. Proven track record in client acquisition, strategic networking, sales performance, and business growth. Strong capability in building trust, driving negotiations, and converting opportunities into long-term business relationships.
+        </p>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Professional Experience</div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>Senior Relationship Officer</h3>
+              <h4>PT Panin Asset Management</h4>
+            </div>
+            <div class="experience-date">2023 - Present</div>
+          </div>
+
+          <ul>
+            <li>Manage strategic client relationships and support revenue-focused business initiatives.</li>
+            <li>Build trust-based engagement with high-value clients through consultative approach.</li>
+            <li>Maintain strong relationship retention and long-term business communication.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>Business Relationship Officer</h3>
+              <h4>PropertyPro by Lamudi</h4>
+            </div>
+            <div class="experience-date">2021 - 2023</div>
+          </div>
+
+          <ul>
+            <li>Supported commercial property business growth and strategic client acquisition.</li>
+            <li>Conducted presentations, negotiations, and relationship development for primary property projects.</li>
+            <li>Developed market opportunities and business partnerships.</li>
+            <li>Achieved Top Sales recognition in Primary Project category.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <div>
+              <h3>Relationship Manager Wealth Management</h3>
+              <h4>PT Bank BTPN – SMBC Group</h4>
+            </div>
+            <div class="experience-date">2020 - 2021</div>
+          </div>
+
+          <ul>
+            <li>Managed affluent customer portfolios and financial advisory relationships.</li>
+            <li>Identified client needs and supported growth through relationship-based selling.</li>
+            <li>Maintained long-term trust and commercial engagement with clients.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section class="section">
+        <div class="section-title">Key Achievements</div>
+
+        <div class="achievement-grid">
+
+          <div class="achievement-card">
+            <h4>1st Top Sales – Primary Project</h4>
+            <p>PropertyPro by Lamudi</p>
+          </div>
+
+          <div class="achievement-card">
+            <h4>1st Top Performance 2019</h4>
+            <p>AJ Sequis Financial</p>
+          </div>
+
+          <div class="achievement-card">
+            <h4>1st Best Rookie Financial Advisor</h4>
+            <p>AXA Mandiri</p>
+          </div>
+
+          <div class="achievement-card">
+            <h4>CSR Scholarship Awardee</h4>
+            <p>Bank Rakyat Indonesia (BRI)</p>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Education</div>
+
+        <div class="education">
+          <h3>Sam Ratulangi University</h3>
+          <p>Faculty of Medicine</p>
+          <p>GPA: 3.27 / 4.00</p>
+        </div>
+      </section>
+
+      <div class="footer-note">
+        Designed for Primary Commercial Property & Business Development Positioning • 2026 Version
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
